@@ -1,4 +1,4 @@
-# Data-driven-testing using k6
+# Data-driven testing using k6
 # Introduction
 This template will help you to implement a data driven testing with k6 framework. k6 is a modern load testing tool,and we have used following Libraries
 http,encoding and htmlReport by simply import in this template. We have also used papaparse because we used CSV file as our test data. So the template will basically help you to have an integrated data driven testing framework using k6
