@@ -1,10 +1,6 @@
 import http from "k6/http";
-
 import { Trend } from "k6/metrics";
-
 import { check } from "k6";
-
- 
 
 const my_Trend_type = new Trend("trend_metrices");
 
@@ -18,7 +14,7 @@ export let options = {
       { duration: '5s', target: 20 }, // stay at 20 users for 5 seconds.
       { duration: '2s', target: 0 }, // ramp-down to 0 users.
   ],
-  tags: { my_tag: "I'm a tag" },
+  tags: { my_other_tag: "I'm different tag" },
 }; 
 
 
@@ -39,8 +35,6 @@ export default function () {
   // Add tag to check
 
   check(res, { 'status is 200': (r) => r.status === 200 }, { my_tag: "I'm a tag" });
-
- 
 
   // Add tag to custom metric
 
