@@ -1,4 +1,4 @@
-# Metrices in k6 
+# Metrices in Grafana k6 performance testing tool
 # Introduction
  This template will help you to implement a metrices with k6. It is a modern load testing tool,You can use k6 to evaluate your systems’ reliability and performance, catching performance regressions and problems earlier. To make performance testing more efficient, we may utilize metrics, which replicate and display what metrics track and how well a system works in real-world scenarios.
 # What is the purpose of metrics in K6, and why do we need them?
