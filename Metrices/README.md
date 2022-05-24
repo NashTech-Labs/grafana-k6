@@ -1,15 +1,31 @@
-# metrices in k6 
+# Metrices in k6 
 # Introduction
- This template will help you to implement a metrices with k6. k6 is a modern load testing tool,and we have used following Libraries http,encoding and htmlReport by simply import in this template.
+ This template will help you to implement a metrices with k6. It is a modern load testing tool,You can use k6 to evaluate your systems’ reliability and performance, catching performance regressions and problems earlier. To make performance testing more efficient, we may utilize metrics, which replicate and display what metrics track and how well a system works in real-world scenarios.
+# What is the purpose of metrics in K6, and why do we need them?
+This is a basic question that almost everyone has, such as why we need and utilize them, therefore let's just define it in one sentence " use these matrices <strong>to analyze, compare, and look for meaningful correlations in your test result data</strong>".
+#  In other words
+ Tracks how well a system works in real-world scenarios. 
 
 # Technologies Used
- Programming language - Javascript
+> Programming language - Javascript
 
- Automation tool - grafana-k6
+> Automation tool - grafana-k6
 
- IDE - Visual Studio Code(vs-code)
-
+> IDE - Visual Studio Code(vs-code)
 # Libraries Used
+# http
+    import http from 'k6/http';
+# check
+    import { check } from 'k6';
+# Counter    
+    import { Counter } from "k6/metrics";
+# Trend      
+    import { Trend } from 'k6/metrics';
+# Gauge   
+    import { Gauge } from "k6/metrics";
+# Rate
+    import { Rate } from "k6/metrics";
+
 
 # Steps for execution
 Clone the repository on your local system. vs-code will resolve all the required dependencies and then Download k6.
@@ -36,6 +52,6 @@ open terminal in project location and type k6 run FileName.js
 
 Now the tests will be execute on your machine.
 
-you can change metrices code as per your needs.
+you can change metrices code and variable name as per your needs.
 
-For a better understanding please refer to this blog:- click here
+For a better understanding please refer to this blog:- [click here]
