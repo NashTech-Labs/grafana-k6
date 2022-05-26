@@ -48,6 +48,6 @@ open terminal in project location and type k6 run FileName.js
 
 Now the tests will be execute on your machine.
 
-you can change metrices code and variable name as per your needs.
+you can change dyamic data in code and variable name as per your needs.
 
 For a better understanding please refer to this blog:- [click here]
