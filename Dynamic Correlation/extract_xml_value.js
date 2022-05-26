@@ -9,19 +9,13 @@ export default function () {
   // Use findBetween to extract the first title encountered:
   const name = findBetween(res.body, '<name>','</name>');
   const email= findBetween(res.body, '<email>','</email>');
- 
-
+  
   check(name, {
     'name is correct': (ast) => ast === 'Mayank Narayana',
-
-
   });
   check(email, {
     'email is correct': (ast) => ast === 'mayank-leo@hotmail.com',
-
-
   });
   console.log('The value of name field is:' + name);
   console.log('The value of name field is:' + email);
-
 }

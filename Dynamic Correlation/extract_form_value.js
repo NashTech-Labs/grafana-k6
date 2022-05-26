@@ -14,13 +14,9 @@ export default function () {
   const val1 = element1.attr('size');
   const val2 = element2.attr('maxlength');
 
-
   // Now you can concatenate this extracted value in subsequent requests that require it.
-  // ...
   // console.log() works when executing k6 scripts locally and is handy for debugging purposes
   console.log('The value of field size is: ' + val1);
   console.log('The value of name field is:' + val2);
-
   sleep(1);
 }
- 
