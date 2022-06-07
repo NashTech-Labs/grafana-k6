@@ -1,4 +1,4 @@
-# parallel requests in Grafana k6 performance testing tool
+# Parallel requests in Grafana k6 performance testing tool
 # Introduction
  This template will help you to implement a parrell/concurrent request in k6. It is a modern load testing tool,You can use k6 to evaluate your systems’ reliability and performance, catching performance regressions and problems earlier. To make performance testing more efficient, we may utilize concurrent request , with the help of concurrent requests  we may reach the application server faster, potentially increasing server resource use.
 # Why should we use parallel requests?
